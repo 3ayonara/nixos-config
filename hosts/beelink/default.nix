@@ -10,6 +10,7 @@
       ./hardware.nix
       ../../modules
       ../../modules/base
+      ../../modules/desktop
     ];
 
   networking.hostName = "beelink"; # Define your hostname.
