@@ -7,6 +7,8 @@
   home.packages = with pkgs;[
     neofetch
     btop
+    rofi
+    kitty
   ];
 
   home.stateVersion = "24.05";

@@ -30,20 +30,20 @@
   # };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  # services.xserver.enable = true;
 
 
   # Enable the Plasma 5 Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
+  # services.xserver.displayManager.sddm.enable = true;
   # services.xserver.desktopManager.plasma5.enable = true;
 
-  programs.hyprland = {
-    enable = true;
-    package = pkgs.hyprland;
-    # xwayland = {
-    #   enable = true;
-    # };
-  };
+  # programs.hyprland = {
+  #   enable = true;
+  #   package = pkgs.hyprland;
+  #   # xwayland = {
+  #   #   enable = true;
+  #   # };
+  # };
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
@@ -53,8 +53,8 @@
   # services.printing.enable = true;
 
   # Enable sound.
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;
+  # sound.enable = true;
+  # hardware.pulseaudio.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -79,7 +79,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
+  # services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

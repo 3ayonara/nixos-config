@@ -36,4 +36,12 @@
     };
   };
 
+  services = {
+    # openssh daemon
+    openssh = {
+      enable = true;
+      settings.PasswordAuthentication = false; # disable SSH password log in
+    };
+  };
+  
 }
