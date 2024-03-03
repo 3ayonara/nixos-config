@@ -34,23 +34,4 @@
     };
   };
 
-  nix = {
-    # enable flake
-    package = pkgs.nixFlakes;
-    extraOptions = "experimental-features = nix-command flakes";
-    settings = {
-      # enable auto-cleanup
-      auto-optimise-store = true;
-      # set max-jobs
-      max-jobs = lib.mkDefault 8;
-    };
-
-    # garbage collection
-    gc = {
-      automatic = true;
-      dates = "daily";
-      options = "--delete older-than 3d";
-    };
-  };
-
 }
