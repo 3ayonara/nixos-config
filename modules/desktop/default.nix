@@ -2,6 +2,6 @@ _:
 
 {
   imports = [
-    ./font.nix
+    ./fonts.nix
   ];
 }
