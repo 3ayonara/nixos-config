@@ -23,10 +23,10 @@
 
   outputs = inputs@{ nixpkgs, home-manager, hyprland, ... }: {
     nixosConfigurations = {
-      ser6-pro-vest = nixpkgs.lib.nixosSystem {
+      beelink = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hosts/ser6-pro-vest
+          ./hosts/beelink
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

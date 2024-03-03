@@ -8,10 +8,10 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware.nix
-      ../../modules/base.nix
+      ../../modules
     ];
 
-  networking.hostName = "ser6-pro-vest"; # Define your hostname.
+  networking.hostName = "beelink"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
